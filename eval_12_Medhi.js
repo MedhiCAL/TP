@@ -34,30 +34,38 @@ function division(a,b){
     result4 =a/b;
     return(result4)
 }
-var a;
-while (isNaN(a)){
-    a=prompt("veuillez rentrer un premier nombre");
+function calculatrice(){
+    var a;
+    while (isNaN(a) || a === undefined){
+        a=prompt("veuillez rentrer una premier nombre");
+    }
+    var b;
+    while (isNaN(b) || b === undefined){
+        b=prompt("veuillez rentrer un deuxieme nombre");
+    }
+    b=parseInt(b)
+    a=parseInt(a)
+
+    var choix=prompt("addition \n soustraction \n multiplication \n division");
+    switch (choix.toLowerCase()){
+        case "addition" : alert(addition(a,b))
+        break;
+        case "soustraction" : alert(soustraction(a,b))
+        break;
+        case "multiplication" : alert(multiplication(a,b))
+        break;
+        case "division" : alert(division(a,b))
+        break;
+        default : alert("votre entrée est incorrect")  
+    }
 }
-var b;
-while (isNaN(b)){
-    b=prompt("veuillez rentrer un deuxieme nombre");
-}
-b=parseInt(b)
-a=parseInt(a)
 
-var choix=prompt(" addition \n soustraction \n multiplication \n division");
-switch (choix.toLowerCase()){
-    case "addition" : alert(addition(a,b))
-    break;
-    case "soustraction" : alert(soustraction(a,b))
-    break;
-    case "multiplication" : alert(multiplication(a,b))
-    break;
-    case "division" : alert(division(a,b))
-    break;
-    default : alert("votre entrée est incorrect")  
+calculatrice()
+
+recommencer = prompt("on recommence ?")
+if (recommencer === true){
+    calculatrice()
+}else{
+    prompt("au revoir")
 }
 
-
-
- 
