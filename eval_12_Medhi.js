@@ -12,38 +12,28 @@
 // - Affichez le résultat isNaN
 // - Proposez à l’utilisateur de recommencer \n\n
 function addition(a,b){
-    let result1 ;
-    result1 =a+b;
-    return(result1);
+    return(a+b)
 }
 
 function soustraction(a,b){
-    let result2 ;
-    result2 =a-b;
-    return(result2);
+    return(a-b);
 }
 
 function multiplication(a,b){
-    let result3 ;
-    result3 =a*b;
-    return(result3)
+    return(a*b)
 }
 
 function division(a,b){
-    let result4 ;
-    result4 =a/b;
-    return(result4)
+    return(a/b)
 }
 var recommencer;
 function calculatrice(){
-    var a;
-    while (isNaN(a) || a === undefined){
-        a=prompt("veuillez rentrer una premier nombre");
-    }
-    var b;
-    while (isNaN(b) || b === undefined){
-        b=prompt("veuillez rentrer un deuxieme nombre");
-    }
+    do{
+     var a=prompt("veuillez rentrer un premier nombre");
+    } while (isNaN(a))
+    do{
+       var b=prompt("veuillez rentrer un deuxieme nombre");
+    }while (isNaN(b))
     b=parseInt(b)
     a=parseInt(a)
 
