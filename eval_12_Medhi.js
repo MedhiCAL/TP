@@ -34,11 +34,16 @@ function division(a,b){
     result4 =a/b;
     return(result4)
 }
-// while(a=isNaN)
-var a=prompt("veuillez rentrer un premier nombre");
-a=parseInt(a)
-var b=prompt("veuillez rentrer un deuxieme nombre");
+var a;
+while (isNaN(a)){
+    a=prompt("veuillez rentrer un premier nombre");
+}
+var b;
+while (isNaN(b)){
+    b=prompt("veuillez rentrer un deuxieme nombre");
+}
 b=parseInt(b)
+a=parseInt(a)
 
 var choix=prompt(" addition \n soustraction \n multiplication \n division");
 switch (choix.toLowerCase()){
