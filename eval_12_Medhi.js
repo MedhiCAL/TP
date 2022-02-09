@@ -34,6 +34,7 @@ function division(a,b){
     result4 =a/b;
     return(result4)
 }
+var recommencer;
 function calculatrice(){
     var a;
     while (isNaN(a) || a === undefined){
@@ -57,15 +58,14 @@ function calculatrice(){
         case "division" : alert(division(a,b))
         break;
         default : alert("votre entrée est incorrect")  
+    } 
+    recommencer = confirm("on recommence ?")
+    if (recommencer === true){
+        calculatrice()
+    }else{
+        prompt("au revoir")
     }
 }
 
 calculatrice()
-
-recommencer = prompt("on recommence ?")
-if (recommencer === true){
-    calculatrice()
-}else{
-    prompt("au revoir")
-}
 
