@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(45deg, blue, yellow);
+}
+.affichage{
+text-shadow: 1px 1px 2px rgb(46, 43, 43);
+margin-top : 20rem;
+margin-left: 30rem;
+background-color: white;
+width: 50%;    
+height: 250px; ;
+display: grid; 
+align-items: center;
+justify-content: center;
+border-color: blue;
+border-style: dashed; 
+}
+
+
+button{
+    background-color: blue;
+    color:yellow;
+    margin-top: 2rem;
+    margin-left: 46%;
+    margin-bottom: 35%;
+    font-family: 'Satisfy';
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 1rem
+}
+
+
+.auteur{
+    text-align: center;
+    font-family: 'Satisfy';
+    font-size: 20px;
+}
+
+.texte{
+    margin:2rem;
+    font-size: large;
+    font-family: 'Satisfy';font-size: 30px;
+}
+
