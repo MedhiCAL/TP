@@ -25,7 +25,7 @@ function verification(){
             affichage.textContent ="gagné ! en " + counter + " coups!";
     }
 }
-inputext.value ="";
+inputext.value =" ";
 }
 
 
